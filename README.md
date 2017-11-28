@@ -61,7 +61,11 @@ meta property
 ## with webrtc
 
 ## To Do
-- [x] Test that es6 code works 
+- [ ] Users can see a list of channels provided by remote server 
+- [ ] Users can join a channel 
+- [ ] Users can generate rooms 
+- [ ] Users can private message other users 
+- [ ] Users will be notified of friends status(online, offline, afk, etc) 
 - [ ] Integrate webrtc for peer to peer connections 
 - [ ] Implement airbnb linter [airbnb's](https://www.npmjs.com/package/eslint-config-airbnb)
 - [ ] Write tests
