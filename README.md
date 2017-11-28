@@ -11,9 +11,7 @@
 * [License](#license)
 
 ## Install
-`npm i -D redux-socketio`
-
-`yarn i -D redux-socketio`
+`npm i -D redux-socketio` or `yarn i -D redux-socketio`
 
 ## Usage
 ```javascript
