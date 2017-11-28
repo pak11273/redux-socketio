@@ -4,8 +4,8 @@
 * [Install](#install)
 * [Usage](#usage)
 * [Options](#options)
-* [Recipes](#recipes)
-  * [Log only in development](#log-only-in-development)
+* [Examples](#examples)
+  * [with webrtc](#with-webrtc)
 * [To Do](#to-do)
 * [Known issues](#known-issues)
 * [License](#license)
@@ -56,7 +56,12 @@ meta property
 
 *Default: `true`*
 
+## Examples
+
+## with webrtc
+
 ## To Do
+- [x] Test that es6 code works 
 - [ ] Integrate webrtc for peer to peer connections 
 - [ ] Implement airbnb linter [airbnb's](https://www.npmjs.com/package/eslint-config-airbnb)
 - [ ] Write tests
@@ -66,7 +71,7 @@ meta property
 Feel free to create PR for any of those tasks!
 
 ## Known issues
-* Performance issues in react-native ([#32](https://github.com/evgenyrodionov/redux-logger/issues/32))
+* Performance issues in react-native ([#32](https://github.com/pak11273/redux-socketio/issues/1))
 
 ## License
 MIT
