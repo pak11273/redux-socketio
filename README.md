@@ -1,5 +1,7 @@
 # Socket.io for Redux
 
+# This is my first npm library.  The current version is not ready for any type of production use.  Use for experimental purposes only!
+
 ## Table of contents
 * [Install](#install)
 * [Usage](#usage)
