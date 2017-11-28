@@ -7,18 +7,19 @@
 * [Recipes](#recipes)
   * [Log only in development](#log-only-in-development)
 * [To Do](#to-do)
-* [Known issues](#known-issues) (with `react-native` only at this moment)
+* [Known issues](#known-issues)
 * [License](#license)
 
 ## Install
 `npm i -D redux-socketio`
+
 `yarn i -D redux-socketio`
 
 ## Usage
 ```javascript
 import { applyMiddleware, createStore } from 'redux';
 
-// Logger with default options
+// Middleware with default options
 import ioMiddleware from 'redux-socketio'
 const store = createStore(
   reducer,
@@ -41,34 +42,23 @@ const store = createStore(
 
 ### Options description
 
-#### __level (String | Function | Object)__
+#### meta
 Level of `console`. `warn`, `error`, `info` or [else](https://developer.mozilla.org/en/docs/Web/API/console).
 
-It can be a function `(action: Object) => level: String`.
-
-It can be an object with getter functions: `prevState`, `action`, `nextState`, `error`. Useful if you want to print
-message based on specific state or action. Set any of them to `false` if you want to hide it.
-
-* `prevState(prevState: Object) => level: String`
-* `action(action: Object) => level: String`
+meta property
+* `ns`
+* `channel`
+* `room`
 
 *Default: `log`*
 
 #### __timestamp (Boolean)__
-Print timestamp with each action?
 
 *Default: `true`*
 
-#### __colors (Object)__
-Object with color getter functions: `title`, `prevState`, `action`, `nextState`, `error`. Useful if you want to paint
-message based on specific state or action. Set any of them to `false` if you want to show plain message without colors.
-
-* `title(action: Object) => color: String`
-* `prevState(prevState: Object) => color: String`
-
 ## To Do
-- [x] Update eslint config to [airbnb's](https://www.npmjs.com/package/eslint-config-airbnb)
-- [ ] Clean up code, because it's very messy, to be honest
+- [ ] Integrate webrtc for peer to peer connections 
+- [ ] Implement airbnb linter [airbnb's](https://www.npmjs.com/package/eslint-config-airbnb)
 - [ ] Write tests
 - [ ] Node.js support
 - [ ] React-native support

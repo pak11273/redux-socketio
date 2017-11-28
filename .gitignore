@@ -1,0 +1,28 @@
+# template ref: https://github.com/github/gitignore
+
+# Custom
+cdn/
+secrets.js
+gotchas
+.notes
+notes
+*.swp
+dist
+.DS_Store
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
