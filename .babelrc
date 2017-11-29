@@ -1,0 +1,14 @@
+{
+  "presets": ["es2015"],
+  "env": {
+    "development": {
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    }
+  /*   "test": { */
+  /*     "plugins": ["transform-es2015-modules-commonjs"] */
+  /*   }, */
+  /*   "server": { */
+  /*     "plugins": ["transform-es2015-modules-commonjs"] */
+  /*   } */
+  }
+}
