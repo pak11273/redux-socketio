@@ -1,6 +1,6 @@
 # Socket.io for Redux
 
-# This is my first npm library.  The current version is not ready for any type of production use.  Use for experimental purposes only!
+## This module is built on top of zurfyx's implementation found ([here](https://stackoverflow.com/questions/37876889/react-redux-and-websockets-with-socket-io))
 
 ## Table of contents
 * [Install](#install)

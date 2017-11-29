@@ -6,7 +6,7 @@ export default store => {
 
     const {promise, type, types, ...rest} = action
 
-    if (type === 'socket') {
+    if (type === 'socket' || !promise) {
       return next(action)
     }
 
