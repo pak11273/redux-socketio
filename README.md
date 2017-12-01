@@ -1,13 +1,11 @@
 # Socket.io for Redux
 
-## This module is built on top of zurfyx's implementation found ([here](https://stackoverflow.com/questions/37876889/react-redux-and-websockets-with-socket-io))
+This module is built on top of zurfyx's implementation found ([here](https://stackoverflow.com/questions/37876889/react-redux-and-websockets-with-socket-io))
 
 ## Table of contents
 * [Install](#install)
 * [Usage](#usage)
-* [Options](#options)
 * [To Do](#to-do)
-  * [with webrtc](#with-webrtc)
 * [Known issues](#known-issues)
 * [License](#license)
 
@@ -29,36 +27,7 @@ const store = createStore(
 // Note passing middleware as the third argument requires redux@>=3.1.0
 ```
 
-## Options
-```javascript
-{
-  meta: {
-    ns:
-    channel:
-    room:
-    }
-}
-```
-
-### Options description
-
-#### meta
-Level of `console`. `warn`, `error`, `info` or [else](https://developer.mozilla.org/en/docs/Web/API/console).
-
-meta property
-* `ns`
-* `channel`
-* `room`
-
-*Default: `log`*
-
-#### __timestamp (Boolean)__
-
-*Default: `true`*
-
-## Examples
-
-## with webrtc
+## See wiki for more details 
 
 ## To Do
 - [ ] Write tests
