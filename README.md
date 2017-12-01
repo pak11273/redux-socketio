@@ -20,8 +20,9 @@ import socketClient from './socketClient';
 // Middleware with default options
 import ioMiddleware from 'redux-socketio'
 const store = createStore(
-  reducer,
+  ...
   applyMiddleware(ioMiddleware(socketClient))
+  ...
 )
 
 // Note passing middleware as the third argument requires redux@>=3.1.0
