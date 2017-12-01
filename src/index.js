@@ -1,4 +1,4 @@
-export default socket => {
+export default Socket => {
   return ({dispatch, getState}) => next => action => {
     if (typeof action === 'function') {
       return action(dispatch, getState)
