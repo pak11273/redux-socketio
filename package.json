@@ -1,6 +1,6 @@
 {
   "name": "redux-socketio",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A redux/socketIO middleware implementation",
   "main": "./dist/index.js",
   "scripts": {
