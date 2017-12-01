@@ -1,4 +1,4 @@
-export default store => {
+export default clientSocket => {
   return ({dispatch, getState}) => next => action => {
     if (typeof action === 'function') {
       return action(dispatch, getState)
@@ -14,7 +14,7 @@ export default store => {
 
     next({...rest, type: REQUEST})
 
-    return promise(socket)
+    return promise(clientSocket)
       .then(result => {
         return next({...rest, result, type: SUCCESS})
       })
