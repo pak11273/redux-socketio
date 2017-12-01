@@ -6,9 +6,8 @@
 * [Install](#install)
 * [Usage](#usage)
 * [Options](#options)
-* [Examples](#examples)
-  * [with webrtc](#with-webrtc)
 * [To Do](#to-do)
+  * [with webrtc](#with-webrtc)
 * [Known issues](#known-issues)
 * [License](#license)
 
@@ -18,12 +17,13 @@
 ## Usage
 ```javascript
 import { applyMiddleware, createStore } from 'redux';
+import socketClient from './socketClient';
 
 // Middleware with default options
 import ioMiddleware from 'redux-socketio'
 const store = createStore(
   reducer,
-  applyMiddleware(ioMiddleware)
+  applyMiddleware(ioMiddleware(socketClient))
 )
 
 // Note passing middleware as the third argument requires redux@>=3.1.0
@@ -61,13 +61,6 @@ meta property
 ## with webrtc
 
 ## To Do
-- [ ] Users can see a list of channels provided by remote server 
-- [ ] Users can join a channel 
-- [ ] Users can generate rooms 
-- [ ] Users can private message other users 
-- [ ] Users will be notified of friends status(online, offline, afk, etc) 
-- [ ] Integrate webrtc for peer to peer connections 
-- [ ] Implement airbnb linter [airbnb's](https://www.npmjs.com/package/eslint-config-airbnb)
 - [ ] Write tests
 - [ ] Node.js support
 - [ ] React-native support
@@ -75,7 +68,7 @@ meta property
 Feel free to create PR for any of those tasks!
 
 ## Known issues
-* Performance issues in react-native ([#32](https://github.com/pak11273/redux-socketio/issues/1))
+* Performance issues ([#1](https://github.com/pak11273/redux-socketio/issues/1))
 
 ## License
 MIT
