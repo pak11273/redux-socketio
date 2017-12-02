@@ -28,7 +28,7 @@ const store = createStore(
 // Note passing middleware as the third argument requires redux@>=3.1.0
 ```
 
-## See wiki for more details 
+## See ['wiki'](https://github.com/pak11273/redux-socketio/wiki) for more details 
 
 ## To Do
 - [ ] Write tests

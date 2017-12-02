@@ -6,7 +6,7 @@ export default clientSocket => {
 
     const {promise, type, types, ...rest} = action
 
-    if (type === 'socket') {
+    if (type !== 'socket' || !promise) {
       return next(action)
     }
 
@@ -14,7 +14,7 @@ export default clientSocket => {
 
     next({...rest, type: REQUEST})
 
-    return promise(clientSocket)
+    return promise()
       .then(result => {
         return next({...rest, result, type: SUCCESS})
       })
