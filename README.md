@@ -14,21 +14,25 @@ This module is built on top of zurfyx's implementation found ([here](https://sta
 
 ## Usage
 ```javascript
-import { applyMiddleware, createStore } from 'redux';
-import socketClient from './socketClient';
-
-// Middleware with default options
+import Socket from './services/socketio/index.js'
+import {createStore, applyMiddleware} from 'redux'
 import ioMiddleware from 'redux-socketio'
+const SocketClient = new Socket()
+
 const store = createStore(
-  ...
-  applyMiddleware(ioMiddleware(socketClient))
-  ...
+  ... 
+      applyMiddleware(ioMiddleware(SocketClient))
+  ... 
 )
+
+...
+
+export default store
 
 // Note passing middleware as the third argument requires redux@>=3.1.0
 ```
 
-## See ['wiki'](https://github.com/pak11273/redux-socketio/wiki) for more details 
+## See [wiki](https://github.com/pak11273/redux-socketio/wiki) for more details 
 
 ## To Do
 - [ ] Write tests
